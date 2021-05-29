@@ -8,7 +8,6 @@ const NavBar = () => {
         <>
             <Navbar expand="lg" variant="light" bg="none">
                 <Container>
-                    {/* <Icon.List size={20} /> */}
                     <NavDropdown title='menu' id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">inicio</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">acerca de nosotros</NavDropdown.Item>
@@ -16,6 +15,7 @@ const NavBar = () => {
                         <NavDropdown.Item href="#action/3.4">nuestro equipo</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.5">encuéntranos</NavDropdown.Item>
                     </NavDropdown>
+                    <Icon.List size={20} />
                     <button type="button" class="btn"><Icon.Telephone /> contacto</button>
                 </Container>
             </Navbar>

@@ -1,5 +1,37 @@
+$main-font-color: #32203f;
+
 body{
-    min-height: 1000px;
+    min-height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.home-container {
+    font-family: 'Montserrat', sans-serif;
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .home-title {
+        display: grid;
+        grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+        align-items: center;
+        text-align: center;
+        grid-gap: 20px;
+        width: 64%;
+        font-size: 57px;
+        font-weight: bold;
+        color:$main-font-color;
+      }
+      .home-title:before,
+      .home-title:after {
+    content: '';
+    border-top: 5px solid;
+  }
+  .home-h2{
+    font-size: 42px;
+      font-weight: lighter;
+      color:$main-font-color;
+  }
 }
