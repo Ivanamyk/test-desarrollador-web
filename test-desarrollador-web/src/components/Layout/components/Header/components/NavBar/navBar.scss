@@ -4,7 +4,8 @@ $hover-bg-color: #c0c0c0;
 $hover-color:#fff;
 
 .navbar{ 
-    position: absolute;
+    position:absolute;
+    z-index: 3;
     width: 100%;
 }
 .dropdown-toggle, .btn {

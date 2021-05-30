@@ -1,17 +1,14 @@
 $main-font-color: #32203f;
 
-body{
-    min-height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .home-container {
     font-family: 'Montserrat', sans-serif;
-    height: 56rem;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .home-title {
         display: grid;

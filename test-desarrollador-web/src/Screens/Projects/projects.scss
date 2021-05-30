@@ -1,0 +1,63 @@
+
+.projects{
+    width: fit-content;
+    display: flex;
+    justify-content: center
+}
+.image-projects{
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    width: fit-content;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: ceter;
+  }
+  .plus{
+    position: absolute;
+    color: black;
+    top: 90%;
+    left: 50%;
+    right:50%;
+  }
+  .plus:hover .overlay {
+    opacity: 1;
+    color: brown;
+  }
+// .item1:hover{
+//   opacity: 0.87;
+// }
+// .item2:hover{
+//     opacity: 0.87;
+//   }
+//   .item3:hover{
+//     opacity: 0.87;
+//   }
+  
+
+// .carousel-fade .carousel-item {
+// 	opacity: 0;
+// 	transition-duration: .6s;
+// 	transition-property: opacity;
+// }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+background-color: #7e6860;
+padding: 20px;
+}
