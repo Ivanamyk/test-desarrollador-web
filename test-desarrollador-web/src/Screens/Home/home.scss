@@ -1,4 +1,4 @@
-$main-font-color: #32203f;
+$main-font-color: #6e6c69;
 
 .home-container {
     font-family: 'Montserrat', sans-serif;
@@ -10,16 +10,22 @@ $main-font-color: #32203f;
     background-repeat: no-repeat;
     background-size: cover;
 
+    .title-container{
+      width: 70%;
+      color:$main-font-color;
+      animation: moveUp 0.8s ease-in-out;
+      transition: top 0.5s;
+      -webkit-animation: moveDown 1s infinite  alternate;
+      animation: moveDown 1s infinite  alternate;
+    }
     .home-title {
         display: grid;
         grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
         align-items: center;
         text-align: center;
         grid-gap: 20px;
-        width: 64%;
         font-size: 57px;
         font-weight: bold;
-        color:$main-font-color;
       }
       .home-title:before,
       .home-title:after {
@@ -29,6 +35,18 @@ $main-font-color: #32203f;
   .home-h2{
     font-size: 42px;
       font-weight: lighter;
-      color:$main-font-color;
   }
+}
+@keyframes moveUp {
+  from {
+    transform: translateY(8rem); 
+  }
+  to {
+    transform: translateY(-10rem); 
+  }
+} 
+
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }

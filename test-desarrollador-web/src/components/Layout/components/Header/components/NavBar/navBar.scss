@@ -8,11 +8,14 @@ $hover-color:#fff;
     z-index: 3;
     width: 100%;
 }
+.logo{
+    width: 60px;
+}
 .dropdown-toggle, .btn {
     color:$font-color;
     background-color: $bg-color;
     border-color: transparent;
-    border-radius:0%;
+    border-radius:5%;
     box-shadow: #a5a4a4 1px 1px 4px;
 }
 .dropdown-toggle{
@@ -47,4 +50,12 @@ $hover-color:#fff;
         width:100%;
         color: $font-color
     }
+}
+.navbar:hover{
+    background-color: #ececec79;
+    -webkit-transition: all 1.4s ease;
+    -moz-transition: all 1.4s ease;
+    -o-transition: all 1.4s ease;
+    -ms-transition: all 1.4s ease;
+    transition: all 1.4s ease;
 }

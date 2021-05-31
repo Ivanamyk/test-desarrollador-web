@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, NavDropdown } from 'react-bootstrap'
+import logo from '../../../../../../assets/img/logo.png'
 import * as Icon from 'react-bootstrap-icons'
 import './navBar.scss'
 
@@ -9,14 +10,12 @@ const NavBar = () => {
             <Navbar expand="lg" variant="light" bg="none">
                 <Container>
                     <NavDropdown title='menu' id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">inicio</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">acerca de nosotros</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">trabajos</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.4">nuestro equipo</NavDropdown.Item>
+                        <NavDropdown.Item href="/">inicio</NavDropdown.Item>
+                        <NavDropdown.Item href="/projects">trabajos</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.5">encuéntranos</NavDropdown.Item>
                     </NavDropdown>
-                    <Icon.List size={20} />
-                    <button type="button" class="btn"><Icon.Telephone /> contacto</button>
+                    <img className='logo' src={logo} />
+                    <button type="button" class="btn">contacto</button>
                 </Container>
             </Navbar>
         </>

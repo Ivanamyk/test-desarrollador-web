@@ -10,8 +10,10 @@ const Home = () => {
             <div className='home-container' style={{
                 backgroundImage: `url(${Bg})`
             }}>
-                <h1 className='home-title'>lorem ipsum dolor</h1>
-                <h2 className='home-h2'>dolore magna</h2>
+                <div className='title-container'>
+                    <h1 className='home-title'>lorem ipsum dolor</h1>
+                    <h2 className='home-h2'>dolore magna</h2>
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,57 @@
+
+.contact-main{
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.split {
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+  
+  .left {
+    width: 60%;
+    left: 0;
+    margin-top: 8rem;
+  }
+  
+  .right {
+    width: 40%;
+    right: 0;
+    border: none;
+    display: grid;
+    height: 100%;
+    overflow: hidden;
+  }
+  .card-body{
+      align-items: flex-start;
+
+      .card-h1{
+        text-align: start;
+    }
+    .card-p{
+        text-align: start;
+    }
+  }
+  .card-body{
+    margin-top: 3rem;
+  }
+ .list-group-item{
+    border-color: transparent;
+    background: none;
+ }
+ .map{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+ }
+.map-img{
+width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+ 
