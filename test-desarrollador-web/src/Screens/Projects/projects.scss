@@ -1,63 +1,74 @@
-
-.card{
-  border: none;
-  display: grid;
-  height: 100%;
-  overflow: hidden;
+.section-a{
+  width: 100%;
+  height:auto;
 }
-.card-img{
-  max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  height: 100%;
-  -webkit-transition: all 4s ease;
-  -moz-transition: all 4s ease;
-  -o-transition: all 4s ease;
-  -ms-transition: all 4s ease;
-  transition: all 0.5s ease;
+.wrapper{
+  height: fit-content;
+  display:grid;
+  align-items: flex-end;
+}
+.wrapper > div{
+  background-color: transparent;
+}
+.title{
+ margin-top: 5.9rem;
+ border-radius: 3%;
+ display:flex;
+ width: fit-content;
+ text-align: left;
+ padding: 0.15rem;
+ color: #f5f4f4;
+ background-color:#1a1919;
+}
+.box-1,.box-2,.box-3{
+  //asi acomodo la descripcion que aparece en hover.
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+.box-1 >img,
+.box-2 >img,
+.box-3 >img{
+  max-width:102%;
+}
+.description1, .description2, .description3{
+  z-index: 2;
+  color:#f3f2f2;
+  position: absolute;
+  opacity: 0;
+  font-size: 13px;
+  padding: 0.5rem;
+  background-color:#585656;
+  transition: transform 2s;
+  text-align: left;
 }
 
-  .text {
-    opacity: 0;
-    text-align: start;
-    width: 100%;
-    padding: 10%;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-    .text-h1{
-      color:#cccac9;
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
-    .text-p{
-      font-size: 1.2rem;
-    }
-  }  
-  .card:hover .card-img{
-    opacity: 0.65;
+.box-1:hover img,
+.box-2:hover img,
+.box-3:hover img{
+  filter: brightness(50%);
+}
+.box-1:hover .description1,
+.box-2:hover .description2,
+.box-3:hover .description3{
+opacity: 0.7;
+transition: visibility 0s, opacity 0.5s linear;
+}
+.slider{
+  display:none
+}
+//media queries
+@media(min-width: 650px){
+  .box-1,.box-2,.box-3{
+    display: none;
   }
-  
-  .text:hover{
-    opacity: 2.7;
-    background-color: #413f3f98;
-    transform: translate(2px, -69px);
-    -webkit-transform: translate(2px, -69px);
-    -moz-transform: translate(2px, -69px);
-    -o-transform: translate(2px, -69px);
-    -ms-transform: translate(2px, -69px);
+  .slider{
+    display:flex;
   }
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-background-color: #68676798;
-padding: 10px;
+  .title{
+    justify-self: center;
+  }
+  .carousel-caption{
+    background-color: #8686867c;
+  }
 }

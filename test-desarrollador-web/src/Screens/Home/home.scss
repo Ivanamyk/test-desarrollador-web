@@ -1,52 +1,41 @@
-$main-font-color: #6e6c69;
+$color: #534227;
 
-.home-container {
-    font-family: 'Montserrat', sans-serif;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .title-container{
-      width: 70%;
-      color:$main-font-color;
-      animation: moveUp 0.8s ease-in-out;
-      transition: top 0.5s;
-      -webkit-animation: moveDown 1s infinite  alternate;
-      animation: moveDown 1s infinite  alternate;
-    }
-    .home-title {
-        display: grid;
-        grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
-        align-items: center;
-        text-align: center;
-        grid-gap: 20px;
-        font-size: 57px;
-        font-weight: bold;
-      }
-      .home-title:before,
-      .home-title:after {
-    content: '';
-    border-top: 5px solid;
-  }
-  .home-h2{
-    font-size: 42px;
-      font-weight: lighter;
-  }
+.section-a{
+  width: 100%;
+  height:auto;
+  background-image: url(./../../assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-@keyframes moveUp {
-  from {
-    transform: translateY(8rem); 
+.wrapper-home{
+  //de esta manera hago que el titulo se posicione en el centro.
+  display: grid;
+  align-items:center;
+  //asi hago que la imagen de fondo se ajuste a la pantalla
+  min-height:770px;
+  max-height:auto;
+}
+.main-title > h1,h2{
+  color: $color;
+}
+.brand{
+  font-size: 57px;
+  font-weight: bold;
+}
+//media queries
+@media(min-width: 700px){
+  .brand {
+    font-size: 73px;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    }
+ //con esto hago que aparezcan las lineas del costado del titulo. tiene que display grid para que funcione.
+ .brand:before,
+ .brand:after {
+ justify-self: center;
+ align-self: center;
+ content: "";
+ border-top: 4.1px solid;
+ width: 75%;
   }
-  to {
-    transform: translateY(-10rem); 
-  }
-} 
-
-@keyframes moveDown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
 }
